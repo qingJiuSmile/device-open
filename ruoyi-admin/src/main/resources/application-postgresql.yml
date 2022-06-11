@@ -16,7 +16,7 @@ spring:
                 url: jdbc:postgresql://localhost:5432/ruoyi
                 username: postgres
                 #password: ruoyi
-                password: postgres
+                password: root
             # 从库数据源
             slave:
                 # 从数据源开关/默认关闭

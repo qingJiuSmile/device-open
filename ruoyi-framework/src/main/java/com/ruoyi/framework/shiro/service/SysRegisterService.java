@@ -32,7 +32,7 @@ public class SysRegisterService
     /**
      * 注册
      */
-    public String register(SysUser user)
+    public String   register(SysUser user)
     {
         String msg = "", loginName = user.getLoginName(), password = user.getPassword();
 
