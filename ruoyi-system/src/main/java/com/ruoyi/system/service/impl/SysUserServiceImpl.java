@@ -231,7 +231,21 @@ public class SysUserServiceImpl implements ISysUserService
     public boolean registerUser(SysUser user)
     {
         user.setUserType(UserConstants.REGISTER_USER_TYPE);
+        // 添加人员信息并默认赋予权限
         return userMapper.insertUser(user) > 0;
+    }
+
+    /**
+     * 注册设备管理员
+     *
+     * @param user 用户信息
+     * @return 成功数量
+     */
+    @Override
+    public boolean registerDeviceUser(SysUser user) {
+        
+        
+        return false;
     }
 
     /**
